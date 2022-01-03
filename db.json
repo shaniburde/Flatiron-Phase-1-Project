@@ -1,1 +1,30 @@
+{
+    "foods": [
+        {
+            "id": "1",
+            "title": "Glazed Doughnut",
+            "description": "Yeasted doughnut with a simple sugary glaze.",
+            "url": "https://assets.epicurious.com/photos/54b0226d766062b20344580a/master/w_1280,c_limit/51160200_glazed-doughnuts_1x1.jpg",
+            "rating": 0,
+            "likes": 0,
+            "comments": [
+                "Yummy!",
+                "I crave this!"
+            ]
+        },
 
+        {
+            "id": "2",
+            "title": "Margherita Pizza",
+            "description": "Crispy, thin crust pizza with fresh sauce and mozzarella cheese.",
+            "url": "https://assets.epicurious.com/photos/54b0226d766062b20344580a/master/w_1280,c_limit/51160200_glazed-doughnuts_1x1.jpg",
+            "rating": 0,
+            "likes": 0,
+            "comments": [
+                "Best pizza is from NYC!",
+                "My favorite lunch!"
+            ]
+
+        }
+    ]
+}
