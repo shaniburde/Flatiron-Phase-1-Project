@@ -25,10 +25,8 @@
 
     <!--Form to add new item-->
     <section id="form-container" class="container" >
-        <form id="new-post"> 
+        <form id="new-post" class="row row-cols-lg-auto g-3 align-items-center"> 
             <h3>Create New Post</h3>
-        <div class="row g-2">
-           <div class="col-md">
             <label for="title">Title:</label> 
                 <input
                 id="input-title"
@@ -51,8 +49,6 @@
                 class="input-text"
             />
             <br/>
-        </div>
-        <div class="col-md">
             <label for="url">Image:</label> 
             <input
                 id="input-url"
@@ -75,10 +71,9 @@
                 class="input-text"
             />
             <br />
-            <input type="submit" value="Post">
+            <input id="post-button" type="submit" value="Post" class="btn btn-primary">
         </form>
-        </div>
-        </div>
+
     </section>
 
     <!--Filtering different items-->

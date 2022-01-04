@@ -1,9 +1,23 @@
+header {
+    color: #fff;
+    background-color: rgb(132, 87, 255);
+    text-align: center;
+    padding: 3em;
+}
+
+div#detail-info.text-center {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
 img {
     width: 30%;
     height: 30%;
     padding-block: 1em;
 }
 
-div #detail-info {
-    outline: 1px solid;
+.btn-primary {
+    color: #fff;
+    background-color: rgb(132, 87, 255);
+    border-color: rgb(132, 87, 255);
 }

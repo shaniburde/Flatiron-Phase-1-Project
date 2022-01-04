@@ -24,6 +24,8 @@ function renderImages(foodObj){
     let getObj = document.querySelector('#detail-info')
      getObj.className = "container"
      getObj.className = "text-center"
+    let onePost = document.createElement('div')
+        onePost.id = "one-post"
     let title = document.createElement('h4')
         title.id = 'post-title'
     let caption = document.createElement('h6')
@@ -43,7 +45,8 @@ function renderImages(foodObj){
     //add event listener to turn the heart red
     comment.textContent = foodObj.comment
 
-    getObj.append(title, caption, url, likeButton, comment)
+    getObj.appendChild(onePost)
+    onePost.append(title, caption, url, likeButton, comment)
 
 
 }
