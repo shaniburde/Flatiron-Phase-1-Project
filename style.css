@@ -1,4 +1,9 @@
 img {
     width: 30%;
-    height: 30%
+    height: 30%;
+    padding-block: 1em;
+}
+
+div #detail-info {
+    outline: 1px solid;
 }

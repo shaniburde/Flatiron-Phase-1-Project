@@ -24,52 +24,61 @@
 
 
     <!--Form to add new item-->
-    <section id="form-container" class="container">
+    <section id="form-container" class="container" >
         <form id="new-post"> 
-         <h3>Create New Post</h3>
-          <label for="title">Title:</label> 
+            <h3>Create New Post</h3>
+        <div class="row g-2">
+           <div class="col-md">
+            <label for="title">Title:</label> 
+                <input
+                id="input-title"
+                class="input-group-text"
+                type="text"
+                name="title"
+                value=""
+                placeholder="Enter your post's title..."
+                class="input-text"
+            />
+            <br/>
+            <label for="caption">Caption:</label> 
             <input
-            id="input-title"
-            type="text"
-            name="title"
-            value=""
-            placeholder="Enter your post's title..."
-            class="input-text"
-          />
-          <br/>
-        <label for="caption">Caption:</label> 
-          <input
-            id="input-caption"
-            type="text"
-            name="caption"
-            value=""
-            placeholder="Enter your post's caption..."
-            class="input-text"
-          />
-          <br/>
-        <label for="url">Image:</label> 
-          <input
-            id="input-url"
-            type="text"
-            name="url"
-            value=""
-            placeholder="Enter your post's image url..."
-            class="input-text"
-          />
-          <br/>
-        <label for="comment">Comment:</label> 
-          <input
-            id="input-comment"
-            type="text"
-            name="comment"
-            value=""
-            placeholder="Add a comment..."
-            class="input-text"
-        />
-        <br />
-        <input type="submit" value="Post">
-
+                id="input-caption"
+                class="input-group-text"
+                type="text"
+                name="caption"
+                value=""
+                placeholder="Enter your post's caption..."
+                class="input-text"
+            />
+            <br/>
+        </div>
+        <div class="col-md">
+            <label for="url">Image:</label> 
+            <input
+                id="input-url"
+                class="input-group-text"
+                type="text"
+                name="url"
+                value=""
+                placeholder="Enter your post's image url..."
+                class="input-text"
+            />
+            <br/>
+            <label for="comment">Comment:</label> 
+            <input
+                id="input-comment"
+                class="input-group-text"
+                type="text"
+                name="comment"
+                value=""
+                placeholder="Add a comment..."
+                class="input-text"
+            />
+            <br />
+            <input type="submit" value="Post">
         </form>
+        </div>
+        </div>
     </section>
 
     <!--Filtering different items-->
