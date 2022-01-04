@@ -47,6 +47,4 @@ function renderImages(foodObj){
 
     getObj.appendChild(onePost)
     onePost.append(title, caption, url, likeButton, comment)
-
-
 }

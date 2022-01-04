@@ -3,17 +3,22 @@ header {
     background-color: rgb(132, 87, 255);
     text-align: center;
     padding: 3em;
+    font-size: 1.5em;
 }
 
-div#detail-info.text-center {
-    padding-top: 3em;
-    padding-bottom: 3em;
+#one-post {
+    padding-top: 1.5em; 
+    padding-bottom: 1.5em;
 }
 
 img {
     width: 30%;
     height: 30%;
     padding-block: 1em;
+}
+
+.rounded {
+    border-radius: 15px!important;
 }
 
 .btn-primary {
