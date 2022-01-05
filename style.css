@@ -108,6 +108,28 @@ input {
 }
 
 
+
+#post-likeButton{
+    width:2rem;
+    height: 2rem;
+    text-align:center;
+    float: left;
+    border-radius: 50%;
+    background: #f9e1ea
+}
+
+#deleteButton{
+    width:2rem;
+    height: 2rem;
+    float: right;
+    border-radius: 20%;
+}
+
+.btn-group :hover{
+    width: 5rem;
+    height: 2rem;
+}
+
 .image-url {
     justify-self: center;
     height: 14rem;

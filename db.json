@@ -209,3 +209,159 @@
     }
   ]
 }
+    "foods": [
+        {
+            "id": "1",
+            "title": "Glazed Doughnut",
+            "description": "Yeasted doughnut with a simple sugary glaze.",
+            "url": "https://assets.epicurious.com/photos/54b0226d766062b20344580a/master/w_1280,c_limit/51160200_glazed-doughnuts_1x1.jpg",
+            "rating": 0,
+            "likes": 0,
+            "comments": [
+                "Yummy!",
+                "I crave this!"
+            ]
+        },
+
+        {
+            "id": "2",
+            "title": "Margherita Pizza",
+            "description": "Crispy, thin crust pizza with fresh sauce and mozzarella cheese.",
+            "url": "https://www.abeautifulplate.com/wp-content/uploads/2015/08/the-best-homemade-margherita-pizza-1-4.jpg",
+            "rating": 0,
+            "likes": 0,
+            "comments": [
+                "Best pizza is from NYC!",
+                "My favorite lunch!"
+            ]
+
+        },
+
+        {
+            "id": "3",
+            "title": "Lamb Burger",
+            "description": "Juicy lamb patty with onions and house sauce.",
+            "url": "https://www.spoonabilities.com/wp-content/uploads/2020/05/Spiced-Lamb-Burger-Recipe.jpg",
+            "rating": 0,
+            "likes": 0,
+            "comments": [
+                "Delicious!",
+                "My favorite dinner!"
+            ]
+
+        },
+
+        {
+            "id": "4",
+            "title": "Breakfast Burrito",
+            "description": "Rice, beans, eggs and extra guacamole.",
+            "url": "https://www.onceuponachef.com/images/2018/03/Breakfast-Burritos.jpg",
+            "rating": 0,
+            "likes": 0,
+            "comments": [
+                "Delicious!",
+                "Breakfast goals!"
+            ]
+
+        },
+
+        {
+            "id": "5",
+            "title": "Adult Mac n' Cheese",
+            "description": "Silky cheddar sauce with perfectly Al Dente shell pasta.",
+            "url": "https://assets.bonappetit.com/photos/5cacf0e37fbac95e35dcc499/16:9/w_1920,c_limit/basically-adult-mac-and-cheese-2-21022019.jpg",
+            "rating": 0,
+            "likes": 0,
+            "comments": [
+                "Yummm!",
+                "I want this for lunch"
+            ]
+
+        },
+
+        {
+            "id": "6",
+            "title": "Chocolate Chip Cookie",
+            "description": "Ooey gooey choloate chip cookie with crisp edges and a soft center.",
+            "url": "https://assets.bonappetit.com/photos/5ca534485e96521ff23b382b/1:1/w_1920,c_limit/chocolate-chip-cookie.jpg",
+            "rating": 0,
+            "likes": 0,
+            "comments": [
+                "I'm craving this right now!",
+                "Need this with a glass of milk!"
+            ]
+
+        },
+
+        {
+            "id": "7",
+            "title": "Chocolate Chip Cookie",
+            "description": "Ooey gooey choloate chip cookie with crisp edges and a soft center.",
+            "url": "https://assets.bonappetit.com/photos/5ca534485e96521ff23b382b/1:1/w_1920,c_limit/chocolate-chip-cookie.jpg",
+            "rating": 0,
+            "likes": 0,
+            "comments": [
+                "I'm craving this right now!",
+                "Need this with a glass of milk!"
+            ]
+
+        },
+
+        {
+            "id": "8",
+            "title": "Lemon Meringue Pie",
+            "description": "Tart and sweet lemon meringue pie.",
+            "url": "https://assets.bonappetit.com/photos/5d9f645147ff4500091082ad/1:1/w_1920,c_limit/1119-Pies-Lemon-Meringue.jpg",
+            "rating": 0,
+            "likes": 0,
+            "comments": [
+                "This is my favorite dessert!",
+                "Yummy!"
+            ]
+
+        },
+
+        {
+            "id": "9",
+            "title": "Skirt Steak",
+            "description": "Fresh off the grill, garnished with grilled pineapple.",
+            "url": "https://assets.bonappetit.com/photos/6112ba70716bf2df70193f72/1:1/w_1920,c_limit/0621-Short-Sweet-Pineapple-Skirt-Steak.jpg",
+            "rating": 0,
+            "likes": 0,
+            "comments": [
+                "I'm making this for dinner.",
+                "Stunning dish!"
+            ]
+
+        },
+
+        {
+            "id": "10",
+            "title": "Skirt Steak",
+            "description": "Fresh off the grill, garnished with grilled pineapple.",
+            "url": "https://assets.bonappetit.com/photos/6112ba70716bf2df70193f72/1:1/w_1920,c_limit/0621-Short-Sweet-Pineapple-Skirt-Steak.jpg",
+            "rating": 0,
+            "likes": 0,
+            "comments": [
+                "I'm making this for dinner.",
+                "Stunning dish!"
+            ]
+
+        },
+
+        {
+            "id": "11",
+            "title": "Chocolate Cake",
+            "description": "Rich dark chocolate cake, topped with a chocolate ganache.",
+            "url": "https://assets.bonappetit.com/photos/6112ba70716bf2df70193f72/1:1/w_1920,c_limit/0621-Short-Sweet-Pineapple-Skirt-Steak.jpg",
+            "rating": 0,
+            "likes": 0,
+            "comments": [
+                "Chocolate lover's dream!",
+                "Perfect dessert!"
+            ]
+
+        }
+
+    ]
+}
