@@ -1,5 +1,4 @@
 
-
 init()
 
 
@@ -9,9 +8,6 @@ function init(){
     getAllFood()
 }
 
-
-
-
 //fetch foods
 function getAllFood(){
     fetch('http://localhost:3000/foods')
@@ -19,7 +15,7 @@ function getAllFood(){
     .then(foods=>foods.forEach(renderImages))
 }
 
-// POST rquest fetch function
+// POST request fetch function
 function newPost(newFoodObj) {
     fetch('http://localhost:3000/foods', {
         method: 'POST',
@@ -64,45 +60,64 @@ function renderImages(foodObj){
         url.id = 'post-url'
         url.src = foodObj.url
         url.className = 'image-url'
-    
 
-    let buttonGroup = document.createElement('div')
-    buttonGroup.className = 'btn-group'
+
+    let deleteDiv = document.createElement('div')
+    deleteDiv.className = 'delet-btn-div'
     let deleteButton = document.createElement('button')
         deleteButton.id = 'deleteButton'
-        deleteButton.innerText = "x"
+        deleteButton.innerText = "X"
+    deleteDiv.append(deleteButton)
+
         deleteButton.addEventListener('click', (e)=> handleDelete(foodObj))
     
     let likeButton = document.createElement('button')
+    let likeDiv = document.createElement("div")
+    likeDiv.appendChild(likeButton)
         likeButton.id = 'post-likeButton'
         likeButton.textContent = "♡"
 
         likeButton.addEventListener('click', (e)=> handleLike(e))
 
         
-            let showComments = document.createElement('ul')
-            let comments = foodObj.comments
-            showComments.id = 'post-comment'
-            showComments.append(comments)
-            
+    let showComments = document.createElement('dl')
+    showComments.id = "comments"
+    console.log(foodObj.comments)
+    for(var key in foodObj.comments){
+        console.log(foodObj.comments[key])
+        const dt = document.createElement('dt')
+        dt.textContent = foodObj.comments[key]
+        showComments.append(dt)
         
-
-
-    //add event listener to turn the heart red
-    // buttonGroup.append(likeButton)
-    title.append(deleteButton)
-    imgCard.append(title, caption, url, likeButton, showComments)
+    }
+    
+    imgCard.append(deleteDiv, title, caption, url, likeDiv, showComments)
     getObj.append(imgCard)
 
 }
 
 function handleLike(e){
     if(e.target.textContent=== empty_heart){
-        e.target.textContent = full_heart
+        e.target.textContent = full_heart;
     }else{
-        e.target.textContent = empty_heart
+        e.target.textContent = empty_heart;
     }
 }
+
+//display only liked Posts
+function displayLikedPosts() {
+    let likedPostsLink = document.querySelector("#liked-posts")
+
+    likedPostsLink.addEventListener("click", () => {
+        if(document.getElementById('#post-likeButton').innerText === full_heart) {
+            style.display = "block";
+        } else if(document.getElementById('#post-likeButton').innerText === empty_heart) {
+            style.display = "none";
+        }
+
+    })   
+}
+displayLikedPosts()
 
 function handleDelete(foodObj){
     document.querySelector('.card').remove()
