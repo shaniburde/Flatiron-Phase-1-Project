@@ -1,28 +1,244 @@
 header {
     color: #fff;
-    background-color: rgb(132, 87, 255);
+    background-color: rgb(240, 90, 190); 
     text-align: center;
-    padding: 3em;
-    font-size: 1.5em;
+    padding: 3em; 
 }
 
-#one-post {
-    padding-top: 1.5em; 
-    padding-bottom: 1.5em;
+
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif
+    
 }
 
-img {
-    width: 30%;
-    height: 30%;
-    padding-block: 1em;
+h1 { 
+    font-size: 60px; 
+    display:flex;
+    text-shadow: 3px 3px #c783ff;
+    font-weight: bold;
+    justify-content: center;
+    padding: 4px;
 }
 
-.rounded {
-    border-radius: 15px!important;
+h3{
+    text-align: center;
 }
 
-.btn-primary {
+ h4#post-title {
+     color:rgb(240, 90, 190);
+     text-shadow: 1.5px 1px rgb(255, 183, 231);
+ }
+
+h5 {
+    font-style: italic;
+}
+
+h6 {
+    font-size: 15px;
+    font-style: italic;
+    color: #5e298a;
+  
+}
+
+.col-sm-10 {
+    text-align: center;
+
+}
+
+input {
+    text-align: center;
+}
+
+.card{
+    text-align: center;
+    border: grey solid 1px;
+    padding: 1rem;
+    width: 25rem;
+    height: 35rem;
+    display: inline-grid;
+    margin: 1rem 2rem;
+    box-shadow: 3px 4px rgb(233, 173, 223)
+}
+
+#post-likeButton{
+    padding: none;
+    width:2rem;
+    height: 2rem;
+    text-align:center;
+    position: absolute;
+    top: 75%;
+    right: 50%;
+    left: 50%;
+    border-radius: 50%;
+    background: #f9e1ea;
+    border-color: #fd9de5;
+    color:rgb(240, 90, 190)
+}
+
+#post-likeButton:hover {
+    background-color: #c783ff;
+    color:rgb(233, 173, 223)
+}
+
+#deleteButton{
+    font-size: 1rem;
+    text-align: center;
+    color: rgb(138, 138, 138);
+    background-color: white;
+    border-color:rgb(185, 185, 185);
+    width:1.5rem;   
+    height: 1.5rem;
+    float: right;
+    border-radius: 20%;
+    padding: 0px; 
+    text-align:center; 
+    vertical-align:middle;
+}
+
+#deleteButton:hover {
+    border-color: #a30000;
+    background-color: rgb(255, 42, 42);
+    color: rgb(252, 252, 252);
+}
+
+
+.image-url {
+    justify-self: center;
+    height: 14rem;
+    width: auto;
+}
+
+/* nav bar */
+
+.sidenav {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color: rgb(250, 159, 238); 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
     color: #fff;
-    background-color: rgb(132, 87, 255);
-    border-color: rgb(132, 87, 255);
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #a467ff;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+button#nav-link {
+      color: rgb(255, 255, 255);
+      background-color: #c783ff;
+      float: left;   
+      width: 10rem;
+      border-color: #c197ff;
+     
+  }
+
+button#nav-link:hover{
+    color: #c783ff;
+    background-color: rgb(255, 255, 255);
+    border-color: #d9abff;
+    float: left; 
+}
+
+
+  #form-container{
+    text-align: justify;
+    border: grey solid 1px;
+    padding: 1rem;
+    width: 100%;
+    height: 25rem;
+    display: inline-grid;
+    margin-top: 1rem;
+    box-shadow: 3px 4px rgb(233, 173, 223)
+}
+
+
+#form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    font-size: 100px; 
+    width: 500px;
+    float:right;
+}
+
+button#toggle-new-post-button {
+    margin: 3rem;
+    width: 80%;
+    color: white;
+    background-color: rgb(255, 123, 211);
+    border-color:rgb(240, 90, 190)
+}
+
+#post-button:hover,
+button#toggle-new-post-button:hover {
+    color: white;
+    background-color: #a467ff;
+    border-color: #893aff;
+}
+
+h3#label {
+    color:#a467ff;
+    text-shadow: 1px 1px #fd9de5;
+    padding: 1.5rem;
+}
+
+label#label {
+    color:#a467ff;
+    font-size: 20px;
+    text-shadow: 1px 1px #fd9de5;
+}
+
+#post-button{
+    color: white;
+    background-color: rgb(255, 123, 211);
+    border-color:rgb(240, 90, 190)
+   
+}
+
+#detail-info {
+    margin-top: 1rem;
+    margin-bottom: 9rem;
+}
+
+.button-div {
+    margin: 3rem;
+    position: relative;
+    top: 20%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }

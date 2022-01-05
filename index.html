@@ -14,9 +14,20 @@
     <header id= "header"> 
         <h1>Chow-Chow Slides</h1>
         <h5>A social media platform for foodies.</h5>
+    <nav>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Sign In</a>
+            <a href="#main">All Posts</a>
+            <a href="#toggle-new-post-button">Create New Post</a>
+            <a href="#">Liked Posts</a>
+          </div>
+          <button id="nav-link" onclick="openNav()">Menu</button>
+     </nav>
     </header>
    
     <!-- Show food pictures and info -->
+    <div id="main">
     <section>
         <div id="detail-info"></div>
    
@@ -24,59 +35,88 @@
 
 
     <!--Form to add new item-->
-    <section id="form-container" class="container" >
-        <form id="new-post" class="row row-cols-lg-auto g-3 align-items-center"> 
-            <h3>Create New Post</h3>
-            <label for="title">Title:</label> 
-                <input
-                id="input-title"
-                class="input-group-text"
-                type="text"
-                name="title"
-                value=""
-                placeholder="Enter your post's title..."
-                class="input-text"
-            />
-            <br/>
-            <label for="caption">Caption:</label> 
-            <input
-                id="input-caption"
-                class="input-group-text"
-                type="text"
-                name="caption"
-                value=""
-                placeholder="Enter your post's caption..."
-                class="input-text"
-            />
-            <br/>
-            <label for="url">Image:</label> 
-            <input
-                id="input-url"
-                class="input-group-text"
-                type="text"
-                name="url"
-                value=""
-                placeholder="Enter your post's image url..."
-                class="input-text"
-            />
-            <br/>
-            <label for="comment">Comment:</label> 
-            <input
-                id="input-comment"
-                class="input-group-text"
-                type="text"
-                name="comment"
-                value=""
-                placeholder="Add a comment..."
-                class="input-text"
-            />
-            <br />
-            <input id="post-button" type="submit" value="Post" class="btn btn-primary">
+    <div class="button-div" class="d-grid gap-2" style="width:100%;height:100%">
+        <a href="#new-post"><button type="button" class="btn btn-primary btn-lg" id="toggle-new-post-button" onclick="toggleForm()">Hide New Post Form</button></a>
+    </div>
+<div id="new-post-form" class="form">
+    <section id="form-container" class="container-lg" class="card">
+        <form id="new-post" class="row-cols-lg-auto g-3 align-items-center"> 
+            <h3 id="label">Create a New Post</h3>
+                <div class="row mb-3"> 
+                    <label id="label" for="title" class="col-sm-2 col-form-label">Title:</label> 
+                    <div class="col-sm-10">
+                        <input
+                        id="input-title"
+                        id="validationDefault01"
+                        class="input-group-text"
+                        type="text"
+                        name="title"
+                        value=""
+                        placeholder="Enter your post's title..."
+                        class="input-text"
+                        required
+                    />
+                    <br/>
+                    </div>
+                </div>
+                <div class="row mb-3"> 
+                    <label id="label" for="caption" class="col-sm-2 col-form-label">Caption:</label> 
+                    <div class="col-sm-10"> 
+                    <input
+                        id="input-caption"
+                        id="validationDefault01"
+                        class="input-group-text"
+                        type="text"
+                        name="caption"
+                        value=""
+                        placeholder="Enter your post's caption..."
+                        class="input-text"
+                        required
+                    />
+                    <br/>
+                    </div>
+                </div>
+                <div class="row mb-3"> 
+                    <label id="label" for="caption" class="col-sm-2 col-form-label">Image:</label>
+                    <div class="col-sm-10">  
+                    <input
+                        id="input-url"
+                        id="validationDefault01"
+                        class="input-group-text"
+                        type="text"
+                        name="url"
+                        value=""
+                        placeholder="Enter your post's image url..."
+                        class="input-text"
+                        required
+                    />
+                    <br/>
+                </div>
+            </div>
+            <div class="row mb-3"> 
+                <label id="label" for="comment" class="col-sm-2 col-form-label">Comment:</label> 
+                <div class="col-sm-10"> 
+                    <input
+                        id="input-comment"
+                        id="validationDefault01"
+                        class="input-group-text"
+                        type="text"
+                        name="comment"
+                        value=""
+                        placeholder="Add a comment..."
+                        class="input-text"
+                    />
+                    <br />
+                </div>
+            </div>
+                    <input id="post-button" type="submit" value="Post to Slides" class="btn btn-primary">
         </form>
 
     </section>
+</div>
 
     <!--Filtering different items-->
     
 </body>
+</div>
 </html>
