@@ -111,7 +111,7 @@ function renderImages(foodObj){
         
     }
 
-        
+        git 
     let showComments = document.createElement('dl')
     showComments.id = "comments"
     console.log(foodObj.comments)
