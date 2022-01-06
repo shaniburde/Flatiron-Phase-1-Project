@@ -18,9 +18,9 @@
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a id="login-button" href="#">Login</a>
-            <a href="#main">All Posts</a>
+            <a href="#all-posts" id="display-all-posts">All Posts</a>
+            <a href="#liked-posts" id="display-liked-posts">Liked Posts</a>
             <a href="#toggle-new-post-button">Create New Post</a>
-            <a id="liked-posts" href="#">Liked Posts</a>
           </div>
           <button id="nav-link" onclick="openNav()">Menu</button>
      </nav>
@@ -36,64 +36,6 @@
    
     </section>
 
-
-    <!--Form to add new item-->
-    <section id="form-container" class="container" >
-        <form id="new-post" class="row row-cols-lg-auto g-3 align-items-center"> 
-            <h3>Create New Post</h3>
-            <label for="title">Title:</label> 
-                <input
-                id="input-title"
-                class="input-group-text"
-                type="text"
-                name="title"
-                value=""
-                placeholder="Enter your post's title..."
-                class="input-text"
-            />
-            <br/>
-            <label for="caption">Caption:</label> 
-            <input
-                id="input-caption"
-                class="input-group-text"
-                type="text"
-                name="caption"
-                value=""
-                placeholder="Enter your post's caption..."
-                class="input-text"
-            />
-            <br/>
-            <label for="url">Image:</label> 
-            <input
-                id="input-url"
-                class="input-group-text"
-                type="text"
-                name="url"
-                value=""
-                placeholder="Enter your post's image url..."
-                class="input-text"
-            />
-            <br/>
-            <label for="comment">Comment:</label> 
-            <input
-                id="input-comment"
-                class="input-group-text"
-                type="text"
-                name="comment"
-                value=""
-                placeholder="Add a comment..."
-                class="input-text"
-            />
-            <br />
-            <input id="post-button" type="submit" value="Post" class="btn btn-primary">
-        </form>
-
-    </section>
-
-    <!--Filtering different items-->
-    
-</body>
-</html>
 
 
     <!--Form to add new item-->

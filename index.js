@@ -7,9 +7,6 @@ function init(){
     getAllFood()
 }
 
-
-
-
 //fetch foods
 function getAllFood(){
     fetch('http://localhost:3000/foods')
@@ -39,15 +36,15 @@ function deletePhoto(id){
         }
     })
     .then(res => res.json())
-    .then(food => console.log(food))
+    .then(food => {console.log(food)})
 }
 
-//render images
+// render images
 
 function renderImages(foodObj){
     let getObj = document.querySelector('#detail-info')
 
-    let imgCard = document.createElement('div')
+    let imgCard = document.createElement('card')
     imgCard.className = 'card'
 
     let title = document.createElement('h4')
@@ -65,17 +62,24 @@ function renderImages(foodObj){
 
 
     let deleteDiv = document.createElement('div')
-    deleteDiv.className = 'delet-btn-div'
+        deleteDiv.className = 'delet-btn-div'
     let deleteButton = document.createElement('button')
         deleteButton.id = 'deleteButton'
         deleteButton.innerText = "X"
-    deleteDiv.append(deleteButton)
+        deleteDiv.append(deleteButton)
+//delete function
+        deleteButton.addEventListener('click', (e)=> handleDelete(foodObj, imgCard))
 
-        deleteButton.addEventListener('click', (e)=> handleDelete(foodObj))
+        function handleDelete(foodObj, imgCard){
+            imgCard.remove()
+            // console.log(imgCard)
+            deletePhoto(foodObj.id)
+        }
     
+
     let likeButton = document.createElement('button')
     let likeDiv = document.createElement("div")
-    likeDiv.appendChild(likeButton)
+        likeDiv.appendChild(likeButton)
         likeButton.id = 'post-likeButton'
         likeButton.textContent = "♡"
 
@@ -95,38 +99,41 @@ function renderImages(foodObj){
     
     imgCard.append(deleteDiv, title, caption, url, likeDiv, showComments)
     getObj.append(imgCard)
+    displayLikedPosts(imgCard)
+    displayAllPosts(imgCard)
 
+   
+    // display all posts
+    function displayAllPosts(imgCard) {
+        let allPostsLink = document.querySelector('#display-all-posts')
+        allPostsLink.addEventListener('click', () => {
+               getAllFood()
+            }
+        )}
+
+    // display only liked Posts
+    function displayLikedPosts(imgCard) {
+        let likedPostsLink = document.querySelector('#display-liked-posts')
+        likedPostsLink.addEventListener("click", () => {
+            if(likeButton.textContent === full_heart) {
+                imgCard.style.visibility = "visible";
+            } else if(likeButton.textContent === empty_heart){
+                imgCard.style.display = "none";
+            }
+        }) 
+}
+  
 }
 
+
+
 function handleLike(e){
-    if(e.target.textContent=== empty_heart){
+    if(e.target.textContent === empty_heart){
         e.target.textContent = full_heart;
-    }else{
+    } else{
         e.target.textContent = empty_heart;
     }
 }
-
-//display only liked Posts
-function displayLikedPosts() {
-    let likedPostsLink = document.querySelector("#liked-posts")
-
-    likedPostsLink.addEventListener("click", () => {
-        if(document.getElementById('#post-likeButton').innerText === full_heart) {
-            style.display = "block";
-        } else if(document.getElementById('#post-likeButton').innerText === empty_heart) {
-            style.display = "none";
-        }
-
-    })   
-}
-displayLikedPosts()
-
-function handleDelete(foodObj){
-    document.querySelector('.card').remove()
-    // console.log(imgCard)
-    deletePhoto(foodObj.id)
-}
-
 
 
 //side nav bar
@@ -162,7 +169,7 @@ function openNav() {
   }
 
 
-  //handle form submit
+//handle form submit
 const form = document.getElementById("new-post")
 form.addEventListener("submit",  (e) => {
     e.preventDefault();
@@ -185,11 +192,11 @@ e.target.reset();
 
 //toggle form button
 function toggleForm() {
-    var x = document.getElementById("new-post-form");
-    if (x.style.display === "none") {
-      x.style.display = "block";
+    let newPostForm = document.getElementById("new-post-form");
+    if (newPostForm.style.display === "none") {
+        newPostForm.style.display = "block";
     } else {
-      x.style.display = "none";
+        newPostForm.style.display = "none";
     }
   }
 
@@ -200,34 +207,3 @@ toggleButton.addEventListener("click", () => {
     toggleButton.innerText = newText
 });
   
-//render images
-
-function renderImages(foodObj){
-    console.log(foodObj)
-    let getObj = document.querySelector('#detail-info')
-     getObj.className = "container"
-     getObj.className = "text-center"
-    let onePost = document.createElement('div')
-        onePost.id = "one-post"
-    let title = document.createElement('h4')
-        title.id = 'post-title'
-    let caption = document.createElement('h6')
-        caption.id = 'post-caption'
-    let url = document.createElement('img')
-        url.id = 'post-url'
-        url.className = "rounded mx-auto d-block"
-    let likeButton = document.createElement('button')
-        likeButton.id = 'post-likeButton'
-    let comment = document.createElement('p')
-        comment.id = 'post-comment'
-
-    title.textContent = foodObj.title
-    caption.textContent = foodObj.captions
-    url.src = foodObj.url
-    likeButton.textContent = "♡"
-    //add event listener to turn the heart red
-    comment.textContent = foodObj.comment
-
-    getObj.appendChild(onePost)
-    onePost.append(title, caption, url, likeButton, comment)
-}
