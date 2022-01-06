@@ -17,10 +17,9 @@
     <nav>
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a id="login-button" href="#">Login</a>
-            <a href="#all-posts" id="display-all-posts">All Posts</a>
-            <a href="#liked-posts" id="display-liked-posts">Liked Posts</a>
-            <a href="#toggle-new-post-button">Create New Post</a>
+            <a href="#header" id="display-all-posts">All Posts</a>
+            <a href="#header" id="display-liked-posts">Liked Posts</a>
+            <a href="#form-container">Create New Post</a>
           </div>
           <button id="nav-link" onclick="openNav()">Menu</button>
      </nav>
@@ -40,7 +39,7 @@
 
     <!--Form to add new item-->
     <div class="button-div" class="d-grid gap-2" style="width:100%;height:100%">
-        <a href="#new-post"><button type="button" class="btn btn-primary btn-lg" id="toggle-new-post-button" onclick="toggleForm()">Hide New Post Form</button></a>
+        <a href="#new-post"><button type="button" class="btn btn-primary btn-lg" id="toggle-new-post-button" onclick="toggleForm()">Click here to create a new post</button></a>
     </div>
 <div id="new-post-form" class="form">
     <section id="form-container" class="container-lg" class="card">

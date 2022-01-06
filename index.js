@@ -38,6 +38,18 @@ function deletePhoto(id){
     .then(res => res.json())
     .then(food => {console.log(food)})
 }
+//PATCH request
+function patchLike(foodObj) {
+    fetch(`http://localhost:3000/foods/${foodObj.id}`, {
+        method: 'PATCH',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(foodObj)
+    })
+    .then(res => res.json())
+    .then(food => {console.log(food)})
+}
 
 // render images
 
@@ -81,9 +93,23 @@ function renderImages(foodObj){
     let likeDiv = document.createElement("div")
         likeDiv.appendChild(likeButton)
         likeButton.id = 'post-likeButton'
-        likeButton.textContent = "♡"
+        likeButton.textContent = foodObj.like
 
         likeButton.addEventListener('click', (e)=> handleLike(e))
+
+    //Handle like function
+    function handleLike(e){
+        if(e.target.textContent === empty_heart){
+            e.target.textContent = full_heart;
+            foodObj.like = "❤️";
+            patchLike(foodObj)
+        } else {
+            e.target.textContent = empty_heart;
+            foodObj.like = "♡";
+            patchLike(foodObj)
+        }
+        
+    }
 
         
     let showComments = document.createElement('dl')
@@ -104,10 +130,10 @@ function renderImages(foodObj){
 
    
     // display all posts
-    function displayAllPosts(imgCard) {
+    function displayAllPosts() {
         let allPostsLink = document.querySelector('#display-all-posts')
         allPostsLink.addEventListener('click', () => {
-               getAllFood()
+               imgCard.style.display = 'inline-grid'
             }
         )}
 
@@ -122,18 +148,10 @@ function renderImages(foodObj){
             }
         }) 
 }
+
   
 }
 
-
-
-function handleLike(e){
-    if(e.target.textContent === empty_heart){
-        e.target.textContent = full_heart;
-    } else{
-        e.target.textContent = empty_heart;
-    }
-}
 
 
 //side nav bar
@@ -177,11 +195,13 @@ form.addEventListener("submit",  (e) => {
     const captionInput = e.target["input-caption"].value
     const imageInput = e.target["input-url"].value
     const commentInput = e.target["input-comment"].value
+
     
     const newFoodObj = {
       title: titleInput,
       caption: captionInput,
       url: imageInput,
+      like: "♡",
       comments: [commentInput]
     }
 renderImages(newFoodObj);

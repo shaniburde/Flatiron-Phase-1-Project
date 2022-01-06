@@ -183,6 +183,10 @@ button#nav-link:hover{
     float: left; 
 }
 
+#buttn-div {
+    text-align: center;
+    align-items: center;
+}
 
   #form-container{
     text-align: justify;
@@ -191,16 +195,13 @@ button#nav-link:hover{
     width: 100%;
     height: 25rem;
     display: inline-grid;
-    margin-top: 1rem;
-    box-shadow: 3px 4px rgb(233, 173, 223)
-}
-
-
-#form-container{
     display: flex;
+    margin-bottom: 3rem;
+    box-shadow: 3px 4px rgb(233, 173, 223);
     justify-content: center;
     align-items: center;
 }
+
 
 input{
     font-size: 100px; 
@@ -209,12 +210,16 @@ input{
 }
 
 button#toggle-new-post-button {
-    margin: 3rem;
+    text-align: center;
+    margin-right: 10%;
+    margin-left: 10%;
     width: 80%;
     color: white;
     background-color: rgb(255, 123, 211);
     border-color:rgb(240, 90, 190)
 }
+
+
 
 #post-button:hover,
 button#toggle-new-post-button:hover {
