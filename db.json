@@ -3,7 +3,7 @@
     {
       "id": "1",
       "title": "Glazed Doughnut",
-      "captions": "Yeasted doughnut with a simple sugary glaze.",
+      "caption": "Yeasted doughnut with a simple sugary glaze.",
       "url": "https://assets.epicurious.com/photos/54b0226d766062b20344580a/master/w_1280,c_limit/51160200_glazed-doughnuts_1x1.jpg",
       "like": "♡",
       "comments": [
@@ -14,7 +14,7 @@
     {
       "id": "2",
       "title": "Margherita Pizza",
-      "captions": "Crispy, thin crust pizza with fresh sauce and mozzarella cheese.",
+      "caption": "Crispy, thin crust pizza with fresh sauce and mozzarella cheese.",
       "url": "https://www.abeautifulplate.com/wp-content/uploads/2015/08/the-best-homemade-margherita-pizza-1-4.jpg",
       "like": "♡",
       "comments": [
@@ -25,9 +25,9 @@
     {
       "id": "3",
       "title": "Lamb Burger",
-      "captions": "Juicy lamb patty with onions and house sauce.",
+      "caption": "Juicy lamb patty with onions and house sauce.",
       "url": "https://www.spoonabilities.com/wp-content/uploads/2020/05/Spiced-Lamb-Burger-Recipe.jpg",
-      "like": "❤️",
+      "like": "♡",
       "comments": [
         "Delicious!",
         "My favorite dinner!"
@@ -36,9 +36,9 @@
     {
       "id": "4",
       "title": "Breakfast Burrito",
-      "captions": "Rice, beans, eggs and extra guacamole.",
+      "caption": "Rice, beans, eggs and extra guacamole.",
       "url": "https://www.onceuponachef.com/images/2018/03/Breakfast-Burritos.jpg",
-      "like": "❤️",
+      "like": "♡",
       "comments": [
         "Delicious!",
         "Breakfast goals!"
@@ -47,7 +47,7 @@
     {
       "id": "5",
       "title": "Adult Mac n' Cheese",
-      "captions": "Silky cheddar sauce with perfectly Al Dente shell pasta.",
+      "caption": "Silky cheddar sauce with perfectly Al Dente shell pasta.",
       "url": "https://assets.bonappetit.com/photos/5cacf0e37fbac95e35dcc499/16:9/w_1920,c_limit/basically-adult-mac-and-cheese-2-21022019.jpg",
       "like": "♡",
       "comments": [
@@ -58,7 +58,7 @@
     {
       "id": "6",
       "title": "Chocolate Chip Cookie",
-      "captions": "Ooey gooey choloate chip cookie with crisp edges and a soft center.",
+      "caption": "Ooey gooey choloate chip cookie with crisp edges and a soft center.",
       "url": "https://assets.bonappetit.com/photos/5ca534485e96521ff23b382b/1:1/w_1920,c_limit/chocolate-chip-cookie.jpg",
       "like": "♡",
       "comments": [
@@ -69,7 +69,7 @@
     {
       "id": "7",
       "title": "Matcha Mochi",
-      "captions": "Yummy green tea ice cream wrapped in a gooey rice dough wrapper.",
+      "caption": "Yummy green tea ice cream wrapped in a gooey rice dough wrapper.",
       "url": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQQso1lJ9pZPImc92tPpwLu-42J3kDac6XEjgnRCZNkuIr2h6bDcgwfA4NOKibkmg2ceEizO4tNseuTT0sgkW-4uZVR7o64_6VpoYLOZ173-sB2KNhXYIDQ&usqp=CAE",
       "like": "♡",
       "comments": [
@@ -80,7 +80,7 @@
     {
       "id": "8",
       "title": "Lemon Meringue Pie",
-      "captions": "Tart and sweet lemon meringue pie.",
+      "caption": "Tart and sweet lemon meringue pie.",
       "url": "https://assets.bonappetit.com/photos/5d9f645147ff4500091082ad/1:1/w_1920,c_limit/1119-Pies-Lemon-Meringue.jpg",
       "like": "♡",
       "comments": [
@@ -91,7 +91,7 @@
     {
       "id": "9",
       "title": "Skirt Steak",
-      "captions": "Fresh off the grill, garnished with grilled pineapple.",
+      "caption": "Fresh off the grill, garnished with grilled pineapple.",
       "url": "https://assets.bonappetit.com/photos/6112ba70716bf2df70193f72/1:1/w_1920,c_limit/0621-Short-Sweet-Pineapple-Skirt-Steak.jpg",
       "like": "♡",
       "comments": [
@@ -102,7 +102,7 @@
     {
       "id": "10",
       "title": "Chicken Marbella",
-      "captions": "Chicken with prunes, olives, capers, red-wine vinegar.",
+      "caption": "Chicken with prunes, olives, capers, red-wine vinegar.",
       "url": "https://goodeggs4.imgix.net/99d74923-77e8-4209-a59e-18da5a74a6f8.jpg?w=840&h=525&fm=jpg&q=80&fit=crop",
       "like": "♡",
       "comments": [
@@ -113,7 +113,7 @@
     {
       "id": "11",
       "title": "Chocolate Cake",
-      "captions": "Rich dark chocolate cake, topped with a chocolate ganache.",
+      "caption": "Rich dark chocolate cake, topped with a chocolate ganache.",
       "url": "https://assets.bonappetit.com/photos/604ec5e4b5ad3ffa9fef0578/1:1/w_1920,c_limit/Passover-Flourless-Chocolate-Cake-With-Cafe-de-Olla-Ganache.jpg",
       "like": "♡",
       "comments": [
@@ -124,7 +124,7 @@
     {
       "id": "12",
       "title": "Carrot Cake",
-      "captions": "Cozy, gingery, and loving just like your grandmother's hug",
+      "caption": "Cozy, gingery, and loving just like your grandmother's hug",
       "url": "https://www.yimmyadventures.com/wp-content/uploads/2021/04/IMG_1465.jpg",
       "like": "♡",
       "comments": [
@@ -135,7 +135,7 @@
     {
       "id": "13",
       "title": "Bagels",
-      "captions": "Chewy, soft, and delicious! ",
+      "caption": "Chewy, soft, and delicious! ",
       "url": "https://www.yimmyadventures.com/wp-content/uploads/2020/09/IMG_7988-4-scaled.jpg",
       "like": "♡",
       "comments": [
@@ -146,7 +146,7 @@
     {
       "id": "14",
       "title": "Pesto Pasta",
-      "captions": "Can't go wrong with some earthy and nutty sauce on some deliciousy al dente noodles.",
+      "caption": "Can't go wrong with some earthy and nutty sauce on some deliciousy al dente noodles.",
       "url": "https://recipetineats.com/wp-content/uploads/2019/02/Pesto-Pasta_3.jpg",
       "like": "♡",
       "comments": [
@@ -157,7 +157,7 @@
     {
       "id": "15",
       "title": "Cacio e Pepe",
-      "captions": "A delicious combination of cheese and pepper.",
+      "caption": "A delicious combination of cheese and pepper.",
       "url": "https://cdn.shopify.com/s/files/1/0148/1945/9126/articles/Cacio_e_Pepe_small_593baafb-77a1-42cb-bf31-000b2f486e89_720x.jpg?v=1614898031",
       "like": "♡",
       "comments": [
@@ -168,7 +168,7 @@
     {
       "id": "16",
       "title": "Dumplings",
-      "captions": "Steamed to perfection",
+      "caption": "Steamed to perfection",
       "url": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimagesvc.meredithcorp.io%2Fv3%2Fmm%2Fimage%3Furl%3Dhttps%253A%252F%252Fstatic.onecms.io%252Fwp-content%252Fuploads%252Fsites%252F19%252F2008%252F03%252F21%252Fpork-dumplings-su-1724861-x.jpg&q=85",
       "like": "♡",
       "comments": [
@@ -179,7 +179,7 @@
     {
       "id": "17",
       "title": "Char Siu Bao",
-      "captions": "Fluffy bun on the outside with a delicious meaty inside",
+      "caption": "Fluffy bun on the outside with a delicious meaty inside",
       "url": "https://whattocooktoday.com/wp-content/uploads/2013/09/charsiubao-5.jpg",
       "like": "♡",
       "comments": [
@@ -190,7 +190,7 @@
     {
       "id": "18",
       "title": "Lamb Chops",
-      "captions": "Jucy Lamb Chops",
+      "caption": "Jucy Lamb Chops",
       "url": "https://www.primaverakitchen.com/wp-content/uploads/2019/05/Garlic-Buter-Lamb-Chops-Primavera-Kitchen-4.jpg.webp",
       "like": "♡",
       "comments": [
@@ -201,7 +201,7 @@
     {
       "id": "19",
       "title": "Fried Rice",
-      "captions": "A little bit of meat and veggies tossed together with rice!",
+      "caption": "A little bit of meat and veggies tossed together with rice!",
       "url": "https://www.simplyrecipes.com/thmb/d3mYEivNIop0JOBuVlNmSOjSoz0=/1335x1335/smart/filters:no_upscale()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2017__12__2017-12-Chicken-Fried-Rice-2-15ac7014b47b40a1a7c7e20a638f4295.jpg",
       "like": "♡",
       "comments": [
@@ -212,13 +212,23 @@
     {
       "id": "20",
       "title": "Dry-aged smoke Tomahawk",
-      "captions": "Smokey and tender. Just every meat-lover's dream.",
+      "caption": "Smokey and tender. Just every meat-lover's dream.",
       "url": "https://cdn.shopify.com/s/files/1/2633/6020/products/Dry-Aged-Tomahawk_large.jpg?v=1588188565",
       "like": "♡",
       "comments": [
         "I'm making this for dinner.",
         "Stunning dish!"
       ]
+    },
+    {
+      "title": "Acai Bowl",
+      "caption": "Refreshing and simply delicious.",
+      "url": "https://theforkedspoon.com/wp-content/uploads/2016/07/acai-bowl-5.jpg",
+      "like": "♡",
+      "comments": [
+        "I love to have this for breakfast!"
+      ],
+      "id": "5zArknP"
     }
   ]
 }
